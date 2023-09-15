@@ -284,6 +284,7 @@ async function runHttpsServer()
 
 	await new Promise((resolve) =>
 	{
+		console.log("Connecting");
 		httpsServer.listen(
 			Number(config.https.listenPort), config.https.listenIp, resolve);
 	});

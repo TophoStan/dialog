@@ -141,7 +141,7 @@ const config =
 			maxIncomingBitrate              : 1500000
 		}
 	},
-	authKey: process.env.AUTH_KEY || `${__dirname}/certs/perms.pub.pem`
+	authKey: process.env.AUTH_KEY || `certs/perms.pub.pem`
 };
 
 if (process.env.MEDIASOUP_ANNOUNCED_IP) 
